@@ -469,9 +469,7 @@ class GLTFLightsExtension {
 		const lightDef = lightDefs[ lightIndex ];
 		let lightNode;
 
-		const color = new Color( 0xffffff );
-
-		if ( lightDef.color !== undefined ) color.fromArray( lightDef.color );
+                const color = new Color(1.0, 0.6, 0.2);
 
 		const range = lightDef.range !== undefined ? lightDef.range : 0;
 
